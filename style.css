@@ -1,0 +1,491 @@
+body {
+    font-family: 'Jura'; /* Убедитесь, что шрифт подключен через Google Fonts */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы */
+}
+header {
+    display: flex; /* Добавляем flexbox для header */
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center; /* Центрируем элементы по вертикали */
+    padding: 20px; /* Добавляем отступы вокруг header */
+}
+.logopark {
+    display: flex; /* Используем flexbox для логотипа и заголовка */
+    align-items: center; /* Центрируем элементы по вертикали */
+    margin-left: 100px;
+    gap: 10px;
+}
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox для расположения элементов навигации в строку */
+    margin-right: 100px;
+    font-family: 'Open Sans', sans-serif; /* Убедитесь, что шрифт установлен для навигации */
+    font-weight: 600;
+}
+nav ul li {
+    margin-right: 50px; /* Отступ между элементами навигации */
+}
+nav ul li a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #333; /* Цвет текста ссылок */
+}
+nav ul li a:hover {
+    text-decoration: none; /* Подчеркивание при наведении */
+}
+
+
+
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 103px;
+    position: relative; /* Относительное позиционирование для контейнера */
+
+}
+.container-1 h2 {
+    font-size: 50px;
+    max-width: 550px;
+    color: #047CFC;
+}
+.container-1 p {
+    font-size: 18px;
+    max-width: 600px;
+}
+.container-1 button {
+    font-family: 'Jura';
+    width: 150px;
+    height: 45px;
+    background-color: #047CFC;
+    border-radius: 30px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.container-1 button:hover {
+    box-shadow: 0 5px 5px rgb(21 73 151);
+    transition: box-shadow 1s
+}
+
+.sagalovok {
+    display: flex;
+    flex-direction: column; /* Убедитесь, что элементы располагаются в колонку */
+    gap: 15px;
+}
+.polygon-img {
+    padding-top: 100px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-right: 181px;
+
+}   
+.polygon-img2 {
+    width: 150px;
+    height: 100px;
+    margin: 100px 0 100px 100px;
+}
+.container-2 {
+    display: flex; /* Используем flexbox для расположения элементов в строку */
+    margin-top: 200px;
+    max-width: 100%;
+    flex-direction: column;
+}
+.container-2 h3 {
+    font-size: 32px;
+}
+.line {
+    width: 270px; /* Длина линии */
+    height: 2px; /* Высота линии */
+    background-color: #047CFC; /* Цвет линии */
+    margin-right: 10px; /* Отступ между линией и заголовком */
+}
+.tx {
+    display: flex;
+    align-items: center;
+}
+
+.blocks {
+    display: flex; /* Используем flexbox для расположения блоков в строку */
+    gap: 20px; /* Отступ между блоками */
+    margin-top: 20px; /* Отступ сверху для блоков */
+    flex-direction: row; /* Устанавливаем вертикальное направление для блоков */
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+}
+.block {
+    display: flex;
+    width: 401px;
+    height: 373px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.block h4 {
+    font-size: 24px; /* Размер шрифта заголовка */
+    color: #333; /* Цвет текста заголовка */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    max-width: 250px;
+}
+.block p {
+    font-size: 18px; /* Размер шрифта текста */
+    color: #666; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    text-align: left; /* Выровнять текст по левому краю */
+    max-width: 250px;
+}
+.block img {
+    width: 80px;
+    height: 80px;
+}
+
+.container-3 {
+    margin-top: 100px;
+}
+.container-3 h3 {
+    font-size: 32px;
+}
+.text {
+    max-width: 580px;
+}
+.komanda {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 93px;
+}
+
+
+
+.container-4 h3 {
+    font-size: 32px;
+}
+.blocks2 {
+    display: flex; /* Используем flexbox для расположения блоков в строку */
+    gap: 20px; /* Отступ между блоками */
+    margin-top: 20px; /* Отступ сверху для блоков */
+    flex-direction: row; /* Устанавливаем вертикальное направление для блоков */
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+}
+.block2 {
+    display: flex;
+    width: 401px;
+    height: 513px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.block2 h4 {
+    font-size: 24px; /* Размер шрифта заголовка */
+    color: #333; /* Цвет текста заголовка */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    max-width: 350px;
+    font-family: 'Open Sans', sans-serif; /* Убедитесь, что шрифт установлен для навигации */
+}
+.block2 p {
+    font-size: 18px; /* Размер шрифта текста */
+    color: #666; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    text-align: left; /* Выровнять текст по левому краю */
+    max-width: 310px;
+    font-family: 'Open Sans', sans-serif; /* Убедитесь, что шрифт установлен для навигации */
+}
+.block2 button {
+    width: 295px;
+    height: 73px;
+    background-color: white;
+    font-size: 27px;
+    font-family:'Jura';
+    border: 1px solid black;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.block2 button:hover {
+    box-shadow: 0 5px 5px rgb(131, 131, 131);
+    transition: box-shadow 0.5s
+}
+
+.container-5 {
+    position: relative; /* Для позиционирования абсолютных элементов внутри */
+    margin-top: 200px;
+}
+.container-5 h3 {
+    font-size: 32px;
+}
+.full-width-block {
+    display: block;
+    width: 100%; /* Занимает всю ширину контейнера */
+    height: 565px; /* Высота нижнего блока (можно изменить) */
+    background-color: #C0DEFE; /* Цвет фона для нижнего блока */
+    position: relative; /* Для позиционирования дочерних элементов */
+    z-index: 1; /* Устанавливаем z-index для обеспечения правильного наложения */
+    margin-top: 80px;
+}
+.top-block {
+    display: flex;
+    width: 680px;
+    height: 730px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    position: relative;
+    z-index: 2;
+    margin-top: -600px;
+    float: right;
+    margin-right: 115px;
+    flex-direction: column;
+
+}
+.kontakty {
+    max-width: 350px;
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+.blocks3 {
+    display: flex;
+}
+.kont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.kont img {
+    width: 30px;
+    height: 30px;
+}
+.contact-info {
+    max-width: 500px;
+    padding-top: 50px;
+}
+.form-group {
+    margin-top: 50px;
+}
+.form-group1 {
+    margin-top: 100px;
+}
+
+input {
+    width: 520px;
+    font-family: 'Jura';
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 70px;
+}
+input:focus {
+    outline: none;
+}
+textarea {
+    width: 520px;
+    max-height: 84px;
+    max-width: 520px;
+    padding: 10px;
+    font-family: 'Jura';
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 70px;
+    font-size: 18px;
+}
+textarea:focus {
+    outline: none;
+}
+
+
+.top-block h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 55px;
+}
+.top-block button {
+    width: 210px;
+    height: 62px;
+    margin-top: 60px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 27px;
+    font-family:'Jura';
+    cursor: pointer;
+    margin-left: 70px;  
+}
+.top-block button:hover {
+    box-shadow: 0 5px 5px rgb(131, 131, 131);
+    transition: box-shadow 0.5s
+}
+
+footer {
+    margin-bottom: 100px;
+    display: flex; /* Добавлено для выравнивания элементов внутри footer */
+    justify-content: space-between; /* Разделяет блоки по краям */
+}
+.footermenu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    max-width: 400px;
+}
+.logopark2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footermenu img {
+    width: 100px;
+    height: 100px;
+}
+.footermenu nav {
+    max-width: 300px;
+}
+.footermenu nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif; /* Убедитесь, что шрифт установлен для навигации */
+    max-width: 300px;
+}
+.footermenu nav ul li {
+    margin-top: 40px;
+}
+.help {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 180px; /* Изменено для более аккуратного выравнивания */
+    justify-content: center;
+}
+.help button {
+    width: 280px;
+    height: 62px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 27px;
+    font-family: 'Jura';
+    cursor: pointer;
+}
+.help button:hover {
+    box-shadow: 0 5px 5px rgb(131, 131, 131);
+    transition: box-shadow 0.5s
+}
+.tx h3 {
+    font-size: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-1-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 103px;
+    position: relative; /* Относительное позиционирование для контейнера */
+
+}
+.sagalovok2 {
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sagalovok2 h1 {
+    font-size: 40px;
+    font-family: 'Jura';
+    color: #2865A6;
+}
+.container-1-1 h2 {
+    font-size: 35px;
+    max-width: 700px;
+}
+.line2 {
+    width: 430px; /* Длина линии */
+    height: 2px; /* Высота линии */
+    background-color: #047CFC; /* Цвет линии */
+    margin-right: 10px; /* Отступ между линией и заголовком */
+}
+.line3 {
+    float: right;
+    width: 430px; /* Длина линии */
+    height: 2px; /* Высота линии */
+    background-color: #047CFC; /* Цвет линии */
+    margin-right: 10px; /* Отступ между линией и заголовком */
+}
+.container-2-2 {
+    margin-top: 200px;
+}
+.container-2-2 p {
+    width: 680px;
+    margin-left: 175px;
+    margin-top: 70px;
+}
+.text2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-left: 175px;
+}
+.circle {
+    width: 15px; /* Ширина круга */
+    height: 15px; /* Высота круга */
+    background-color: #3498db; /* Цвет круга */
+    border-radius: 50%; /* Делаем круг */
+    margin-right: 10px; /* Отступ справа от круга */
+}
+p {
+    margin: 0; /* Убираем отступы у параграфа */
+}
+.scrin {
+    padding: 30px; /* Отступ вокруг содержимого */
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+.scrin img {
+    display: block; /* Убирает пробел под изображением */
+    max-width: 100%; /* Делает изображение отзывчивым */
+    height: auto; /* Сохраняет пропорции изображения */
+    box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.7); /* Тень вокруг изображения */
+}
