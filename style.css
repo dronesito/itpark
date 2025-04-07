@@ -239,7 +239,7 @@ nav ul li a:hover {
     z-index: 1; /* Устанавливаем z-index для обеспечения правильного наложения */
     margin-top: 80px;
 }
-.top-block {
+.top-block2 {
     display: flex;
     width: 680px;
     height: 730px;
@@ -310,13 +310,13 @@ textarea:focus {
 }
 
 
-.top-block h1 {
+.top-block2 h1 {
     display: flex;
     justify-content: center;
     font-size: 50px;
     margin-top: 55px;
 }
-.top-block button {
+.top-block2 button {
     width: 210px;
     height: 62px;
     margin-top: 60px;
@@ -327,7 +327,7 @@ textarea:focus {
     cursor: pointer;
     margin-left: 70px;  
 }
-.top-block button:hover {
+.top-block2 button:hover {
     box-shadow: 0 5px 5px rgb(131, 131, 131);
     transition: box-shadow 0.5s
 }
@@ -491,7 +491,9 @@ p {
 }
 .mobile-menu,
 .menu-toggle,
-.modal {
+.modal,
+.top-block,
+.close {
     display: none;
 }
 
@@ -508,7 +510,8 @@ p {
     nav,
     .polygon-img,
     .polygon-img2,
-    .komanda img {
+    .komanda img,
+    .top-block2 {
         display: none; 
     }
     .line {
@@ -693,29 +696,30 @@ p {
         z-index: 1001; /* Чтобы кнопка была поверх меню */
     }
     .modal {
-        display: none; /* Скрываем модальное окно по умолчанию */
-        position: fixed;
-        z-index: 1000; /* Слой над другими элементами */
+        display: none; /* Скрыть модальное окно по умолчанию */
+        position: fixed; /* Остается на месте */
+        z-index: 1; /* Ставим на передний план */
         left: 0;
         top: 0;
-        width: 100%; /* Полная ширина */
-        height: 100%; /* Полная высота */
-        overflow: auto; /* Позволяет прокрутку, если нужно */
-        background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+        width: 100%; /* Ширина 100% */
+        height: 100%; /* Высота 100% */
+        overflow: auto; /* Включаем прокрутку при необходимости */
+        background-color: rgb(0,0,0); /* Цвет фона */
+        background-color: rgba(0,0,0,0.4); /* Черный с прозрачностью */
     }
     .modal-content {
-        margin: 10% auto; /* Центрируем окно, отступ сверху 10% */
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% от верхней и центра по горизонтали */
         padding: 20px;
+        border: 1px solid #888;
         width: 80%; /* Ширина модального окна */
-        max-width: 500px; /* Максимальная ширина модального окна */ 
     }
     .close {
-        display: flex;
+        display: block;
         color: #aaa;
-        margin-right: 10px;
-        font-size: 28px;
+        float: right;
+        font-size: 35px;
         font-weight: bold;
-        justify-content: flex-end;
     }
     .close:hover,
     .close:focus {
@@ -726,11 +730,24 @@ p {
 
 
 
-
-
-
+    .top-block button {
+        width: 210px;
+        height: 62px;
+        margin-top: 60px;
+        background-color: white;
+        border: 1px solid black;
+        font-size: 27px;
+        font-family:'Jura';
+        cursor: pointer;
+        margin-left: 70px;  
+    }
+    .top-block button:hover {
+        box-shadow: 0 5px 5px rgb(131, 131, 131);
+        transition: box-shadow 0.5s
+    }
 
     .top-block {
+        display: block;
         margin: 0;
         width: 100%;
     }
