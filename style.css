@@ -489,3 +489,216 @@ p {
     height: auto; /* Сохраняет пропорции изображения */
     box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.7); /* Тень вокруг изображения */
 }
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    .container-1 img,
+    nav,
+    .polygon-img,
+    .polygon-img2,
+    .komanda img,
+    .top-block {
+        display: none; 
+    }
+    .line {
+        width: 30vw;
+    }
+    .sagalovok {
+        padding: 20px;
+    }
+    .blocks {
+        display: flex;
+        flex-direction: column;
+    }
+    .block {
+        width: 300px;
+        height: 250px;
+    }
+    .text {
+        padding: 20px;
+    }
+    .blocks2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info {
+        padding: 20px;
+    }
+    .kontakty {
+        margin: 0;
+    }
+    .full-width-block {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .footermenu {
+        margin: 0;
+    }
+    .help {
+        padding: 0;
+    }  
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Уменьшаем размер шрифта для еще меньших экранов */
+    }
+    .container-1 h2 {
+        font-size: 27px;
+    }
+    .logopark {
+        margin: 0;
+    }
+    .logopark img {
+        width: 50px;
+        height: 50px;
+    }
+    header h1 {
+        font-size: 27px;
+    }
+    .block {
+        width: 90%; /* Ширина блока 90% для маленьких экранов */
+        height: auto; /* Автоматическая высота */
+        margin: 10px auto; /* Центрируем блоки с отступом */
+    }
+    .contact-info {
+        flex-direction: column; /* Изменяем направление на колонку для контактной информации */
+    }
+    .kontakty {
+        margin-bottom: 20px; /* Отступ между контактами */
+    }
+    .help button {
+        width: 100%; /* Кнопка помощи занимает 100% ширины */
+    }
+    .blocks {
+        padding: 50px;
+    }
+    .block2 {
+        width: 250px;
+        height: 350px;
+    }
+    .footermenu h1 {
+        font-size: 20px;
+    }
+    .tx h3 {
+        font-size: 22px;
+    }
+
+    .block2 h4 {
+        font-size: 18px;
+    } 
+    .block p {
+        font-size: 14px;
+    }
+    .block2 p {
+        font-size: 16px;
+    }
+    .block2 button {
+        width: 230px;
+    }
+    .kont {
+        font-size: 12px;
+    }
+    .footermenu img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+
+
+
+    .sagalovok2 h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .container-1-1 img {
+        display: none;
+    } 
+    .container-1-1 h2 {
+        font-size: 22px;
+        padding: 20px;
+    }
+    .container-2-2 p {
+        margin: 0;
+        width: 90%;
+        padding: 20px;
+    }
+    .text2 {
+        margin: 0;
+        padding: 20px;
+    }
+    .circle {
+        display: none;
+    }
+    .scrin {
+        padding: 20px;
+    }
+    .help {
+        margin-top: 30px;
+    }
+    
+
+
+
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+    }
+    .mobile-menu {
+        position: fixed;
+        right: -300px; /* Скрываем меню за пределами экрана */
+        top: 0;
+        width: 250px;
+        height: 350px;
+        background-color: #fff; /* Цвет фона меню */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease; /* Анимация появления */
+        padding: 20px;
+        z-index: 1000; /* Чтобы меню было поверх других элементов */
+    }
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        font-size: 24px;
+    }
+    .mobile-menu li {
+        margin: 20px 0;
+    }
+    .mobile-menu a {
+        text-decoration: none;
+        color: #000;
+    }
+    .menu-toggle {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        padding: 10px 15px;
+        background-color: #007BFF; /* Цвет кнопки */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1001; /* Чтобы кнопка была поверх меню */
+    }
+    
+}
