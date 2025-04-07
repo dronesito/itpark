@@ -119,58 +119,31 @@
             <h3>Контакты</h3>
         </div>
         <div class="full-width-block">
-    <div class="contact-info">
-        <div class="kontakty">
-            <div class="kont">
-            <img src="img/telefon.png" alt="">
-            <h1>Позвоните нам</h1>
-            </div>
-            <p>+7 (35161) 9-52-51, +7 (7635) 4-12-09</p>
-        </div>
-
-
-        <div class="kontakty">
-            <div class="kont">
-            <img src="img/placeholder.png" alt="">
-            <h1>Расположение</h1>
-            </div>
-            <p>Челябинская обл., г.Сатка, ул.Солнечная, 32</p>
-        </div>
-
-        <div class="kontakty">
-            <div class="kont">
-            <img src="img/clock.png" alt="">
-            <h1>Рабочие часы</h1>
-            </div>
-            <p>пн-чт 08:00–17:00, перерыв 12:00–13:00; пт 08:00–16:00, перерыв 12:00–13:00</p>
-        </div>
-    </div>
-    <div id="contact-modal" class="modal">
-        <div class="modal-content">
-            <div class="top-block">
-                <span class="close">&times;</span>
-                <h1>Связаться с нами</h1>
-                <form>
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Ваше Имя" required="">
+            <div class="contact-info">
+                <div class="kontakty">
+                    <div class="kont">
+                        <img src="img/telefon.png" alt="">
+                        <h1>Позвоните нам</h1>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="E-mail" required="">   
+                    <p>+7 (35161) 9-52-51, +7 (7635) 4-12-09</p>
+                </div>
+                <div class="kontakty">
+                    <div class="kont">
+                        <img src="img/placeholder.png" alt="">
+                        <h1>Расположение</h1>
                     </div>
-                    <div class="form-group1">
-                        <textarea id="text" name="text" placeholder="" required="" rows="4"></textarea>
+                    <p>Челябинская обл., г.Сатка, ул.Солнечная, 32</p>
+                </div>
+                <div class="kontakty">
+                    <div class="kont">
+                        <img src="img/clock.png" alt="">
+                        <h1>Рабочие часы</h1>
                     </div>
-                    <button type="submit">Отправить</button>
-                </form>
+                    <p>пн-чт 08:00–17:00, перерыв 12:00–13:00; пт 08:00–16:00, перерыв 12:00–13:00</p>
+                </div>
             </div>
         </div>
     </div>
-
-        </form>
-    </div>
-        </div>
-
-    <img src="img/Polygon 2.png" alt="" class="polygon-img2">
     <footer>
         <div class="footermenu">
             <div class="logopark2">
@@ -188,9 +161,29 @@
         </div>
         <div class="help">
             <h2>Нужна помощь?</h2>
-            <button>Напишите нам</button>
+            <button id="open-modal">Напишите нам</button>
         </div>
     </footer>
+    <div id="contact-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <div class="top-block">
+                <span class="close">&times;</span> <!-- Кнопка закрытия -->
+                <h1>Связаться с нами</h1>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше Имя" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required="">   
+                    </div>
+                    <div class="form-group1">
+                        <textarea id="text" name="text" placeholder="" required="" rows="4"></textarea>
+                    </div>
+                    <button type="button" id="submit-button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
