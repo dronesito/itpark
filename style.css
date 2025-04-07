@@ -490,7 +490,8 @@ p {
     box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.7); /* Тень вокруг изображения */
 }
 .mobile-menu,
-.menu-toggle {
+.menu-toggle,
+.modal {
     display: none;
 }
 
@@ -507,8 +508,7 @@ p {
     nav,
     .polygon-img,
     .polygon-img2,
-    .komanda img,
-    .top-block {
+    .komanda img {
         display: none; 
     }
     .line {
@@ -601,7 +601,6 @@ p {
     .tx h3 {
         font-size: 22px;
     }
-
     .block2 h4 {
         font-size: 18px;
     } 
@@ -621,12 +620,6 @@ p {
         width: 50px;
         height: 50px;
     }
-
-
-
-
-
-
     .sagalovok2 h1 {
         font-size: 22px;
         text-align: center;
@@ -656,10 +649,6 @@ p {
     .help {
         margin-top: 30px;
     }
-    
-
-
-
     .menu-toggle {
         display: block;
     }
@@ -703,5 +692,60 @@ p {
         cursor: pointer;
         z-index: 1001; /* Чтобы кнопка была поверх меню */
     }
-    
+    .modal {
+        display: none; /* Скрываем модальное окно по умолчанию */
+        position: fixed;
+        z-index: 1000; /* Слой над другими элементами */
+        left: 0;
+        top: 0;
+        width: 100%; /* Полная ширина */
+        height: 100%; /* Полная высота */
+        overflow: auto; /* Позволяет прокрутку, если нужно */
+        background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    }
+    .modal-content {
+        margin: 10% auto; /* Центрируем окно, отступ сверху 10% */
+        padding: 20px;
+        width: 80%; /* Ширина модального окна */
+        max-width: 500px; /* Максимальная ширина модального окна */ 
+    }
+    .close {
+        display: flex;
+        color: #aaa;
+        margin-right: 10px;
+        font-size: 28px;
+        font-weight: bold;
+        justify-content: flex-end;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+    .top-block {
+        margin: 0;
+        width: 100%;
+    }
+    .top-block h1{
+        font-size: 22px;
+    }
+    input {
+        margin: 0;
+        max-width: 90%;
+    }
+    textarea {
+        margin: 0;
+        max-width: 90%;
+    }
+    .top-block button {
+        margin-left: 25px;
+    }
 }
