@@ -145,25 +145,31 @@
             <p>пн-чт 08:00–17:00, перерыв 12:00–13:00; пт 08:00–16:00, перерыв 12:00–13:00</p>
         </div>
     </div>
-    <div class="top-block">
-        <h1>Связаться с нами</h1>
-        <form>
-            <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Ваше Имя" required="">
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <div class="top-block">
+                <span class="close">&times;</span>
+                <h1>Связаться с нами</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше Имя" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required="">   
+                    </div>
+                    <div class="form-group1">
+                        <textarea id="text" name="text" placeholder="" required="" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
             </div>
-            
-            <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="E-mail" required="">   
-            </div>
-            
-            <div class="form-group1">
-                <textarea id="text" name="text" placeholder="" required="" rows="4"></textarea>
-            </div>
-            <button type="submit">Отправить</button>
+        </div>
+    </div>
+
         </form>
     </div>
         </div>
-    </div>
+
     <img src="img/Polygon 2.png" alt="" class="polygon-img2">
     <footer>
         <div class="footermenu">
