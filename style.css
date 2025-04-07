@@ -489,7 +489,8 @@ p {
     height: auto; /* Сохраняет пропорции изображения */
     box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.7); /* Тень вокруг изображения */
 }
-.mobile-menu {
+.mobile-menu,
+.menu-toggle {
     display: none;
 }
 
@@ -659,7 +660,9 @@ p {
 
 
 
-
+    .menu-toggle {
+        display: block;
+    }
     .mobile-menu {
         display: flex;
         align-items: center;
