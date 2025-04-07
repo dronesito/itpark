@@ -116,9 +116,29 @@
         </div>
         <div class="help">
             <h2>Нужна помощь?</h2>
-            <button>Напишите нам</button>
+            <button id="open-modal">Напишите нам</button>
         </div>
-    </footer>   
+    </footer>
+    <div id="contact-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <div class="top-block">
+                <span class="close">&times;</span> <!-- Кнопка закрытия -->
+                <h1>Связаться с нами</h1>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше Имя" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required="">   
+                    </div>
+                    <div class="form-group1">
+                        <textarea id="text" name="text" placeholder="" required="" rows="4"></textarea>
+                    </div>
+                    <button type="button" id="submit-button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
