@@ -1,189 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Holtwood+One+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logo.png">
     <title>Парк ИТ-Сатка</title>
 </head>
 <body>
     <header>
-    <div class="logopark">
-        <img src="img/logo.png" alt="">
-        <h1>Парк ИТ-Сатка</h1>
-    </div>
+        <div class="logopark">
+            <img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt="">
+            <div class="logotext">
+                <h1 style="font-family: 'Holtwood One SC', cursive;">Парк It</h1>
+                <h2 style="font-family: 'Alegreya', cursive;">Сатка</h2>
+            </div>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                    <li><a href="#container-3">О нас</a></li>
-                    <li><a href="#container-2">Предлагаем</a></li>
-                    <li><a href="#container-5">Контакты</a></li>
-                    <li><a href="4about.html">Приложение</a></li>
+                <li><a href="index.html" style="font-family: 'Alegreya', serif;">Главная</a></li>
+                <li><a href="#container-3" style="font-family: 'Alegreya', serif;">О нас</a></li>
+                <li><a href="#container-2" style="font-family: 'Alegreya', serif;">Предлагаем</a></li>
+                <li><a href="#container-5" style="font-family: 'Alegreya', serif;">Контакты</a></li>
+                <li><a href="4about.html" style="font-family: 'Alegreya', serif;">Приложение</a></li>
             </ul>
         </nav>
-        <div id="mobile-menu" class="mobile-menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#container-2">Услуги</a></li>
-                <li><a href="#container-3">Наша команда</a></li>
-                <li><a href="#container-5">Контакты</a></li>
-                <li><a href="4about.html">Приложение</a></li>
-            </ul>
-        </div>
-        <button id="menu-toggle" class="menu-toggle">Меню</button>
-    </header>
-
+    </header>    
     <div class="container-1">
-        <img src="img/1 ilustraition.png" alt="">
-        <div class="sagalovok">
-            <h2>Внедрение SAP и 1С для бизнеса</h2>
-            <p>Мы предлагаем комплексные услуги по внедрению и сопровождению систем SAP и программных продуктов на платформе 1С:Предприятие.</p>
-            <button>Подробнее</button>
+        <div class="banner-slider">
+            <img src="img/1банер.jpg" class="active" alt="Banner 1">
+            <img src="img/2банер.jpg" class="inactive" alt="Banner 2">
+            <img src="img/3банер.png" class="inactive" alt="Banner 3">
+        </div>
+        <div class="banner-container">
+            <div class="banner-text">Внедрение и сопровождение программ на платформе 1С:Предприятие</div>
+            <div class="button-container"> <!-- Добавьте класс show по умолчанию -->
+                <button class="banner-button">Подробнее</button>
+            </div>
+           <div class="menuban-container">
+    <div class="menuban" onclick="showBanner(0)">
+        <h1>01</h1>
+        <p>Компания</p>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="menuban" onclick="showBanner(1)">
+        <h1>02</h1>
+        <p>Разработка</p>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="menuban" onclick="showBanner(2)">
+        <h1>03</h1>
+        <p>WEB</p>
+    </div>
+</div>
         </div>
     </div>
-    <img src="img/Polygon 3.png" alt="" class="polygon-img"> 
-    <div id="container-2" class="container-2">
-        <div class="tx">
-            <div class="line"></div>
-            <h3>Услуги IT-Парк</h3>
-        </div>
-        <div class="blocks">
-            <div class="block">
-                <img src="img/1usluga.png" alt="">
-                <h4>Введение и соправождение 1С</h4> 
-                <p>Помощь в подключении программных продуктов и сервисов 1С </p>
-            </div>
-            <div class="block">
-                <img src="img/2usluga.png" alt="">
-                <h4>Разработка ПО</h4>
-                <p>Разработка программного обеспечения на .net под ваши требования</p> 
-            </div>
-            <div class="block">
-                <img src="img/3usluga.png" alt="">
-                <h4>Web-разработка</h4> 
-                <p>Создание сайтов и web-приложений</p> 
-            </div>
-        </div>
-    </div>
-    
-    <div id="container-3" class="container-3">
-        <div class="tx">
-            <div class="line"></div>
-            <h3>Наша Команда</h3>
-        </div>
+    <div class="container-2" id="container-2">
         <div class="komanda">
-        <div class="text">
-            <p>Мы, команда профессионалов в области информационных технологий. Имеем большой опыт работы с различными информационными системами, а также опыт разработки собственных программных продуктов.</p>
-            <p>В составе команды работают специалисты, которые много лет занимались внедрением и сопровождением системы SAP и программных продуктов на платформе 1С:Предприятие.</p>
-            <p>В активе собственных разработок наших программистов MES-система, система внутреннего ЭДО, интернет-портал. Все эти программные продукты эксплуатируются на промышленных предприятиях.</p>
-            <p>Среди наших клиентов предприятия "Группы Магнезит", ООО "Магнезит Монтаж Сервис", ООО "Магсити", ООО "Завод плавленого периклаза", ООО "Ремонтно-механическое предприятие", АНО ДПО "Центр обучения и развития персонала", ООО "Единый консалтинговый центр", ООО "Саткинская нерудная компания", ООО "Завод брикетированных материалов", ООО "НПК "Огнеупор", ООО "Автогарант", ООО "Магистраль".</p>
-    </div>
-    <img src="img/2 ilustration.png" alt="">
+        <h1>Наша команда</h1>
+        <p>Мы, команда профессионалов в области информационных технологий. Имеем большой опыт работы с различными информационными системами, а также опыт разработки собственных программных продуктов.</p>
+        <p>В составе команды работают специалисты, которые много лет занимались внедрением и сопровождением системы SAP и программных продуктов на платформе 1С:Предприятие.</p>
+        <p>В активе собственных разработок наших программистов MES-система, система внутреннего ЭДО, интернет-портал. Все эти программные продукты эксплуатируются на промышленных предприятиях.</p>
+        <p>Среди наших клиентов предприятия "Группы Магнезит", ООО "Магнезит Монтаж Сервис", ООО "Магсити", ООО "Завод плавленого периклаза", ООО "Ремонтно-механическое предприятие", АНО ДПО "Центр обучения и развития персонала", ООО "Единый консалтинговый центр", ООО "Саткинская нерудная компания", ООО "Завод брикетированных материалов", ООО "НПК "Огнеупор", ООО "Автогарант", ООО "Магистраль".</p>
     </div>
     </div>
-    <img src="img/Polygon 2.png" alt="" class="polygon-img2">
-    <div class="container-4">
-        <div class="tx">
-            <div class="line"></div>
-            <h3>Наши разработки </h3>
+    <div class="container-3">
+        <h1>Наши услуги</h1>
+        <div class="blocks">
+        <div class="block">
+            <h2>Внедрение, сопровождение 1С:</h2>
+            <p>Окажем помощь в подборе и подключении программных продуктов и сервисов 1С
+                Оптимально настроим продукт с учетом специфики организации
+                Поможем в решении технических вопросов по эксплуатации программного продукта
+                Проконсультируем при выполнении различных процедур и подготовке отчетности
+                Дополним стандартную 1С отчетами и документами, используемыми в Вашей компании</p>
         </div>
-        <div class="blocks2">
-            <div class="block2">
-                <h4>Система электронного документооборота предприятия</h4> 
-                <p>Система ЭДО предназначена для оптимизации управления документами в организации, улучшая взаимодействие и повышая производительность.</p> <!-- Добавляем текст -->
-                <a href="2about.html">
-                    <button>Посмотреть</button>
-                </a>
-            </div>
+        <div class="block">
+            <h3>Разработка программного обеспечения под заказ:</h3>
+            <p>Разработка прораммного обеспечения на .net под ваши требования
+               Создание сайтов и web-приложений
+               Доработка типовых и нестандартных конфигураций на платформе 1С
+               Разработка модулей, отчетов, расширение стандартного функционала в системе SAP
+               Разработка интеграционных решений между различными системами</p>
+        </div>
+        </div>
+    </div>
 
-            <div class="block2">
-                <h4>Система контроля работы автотранспорта и учёта перевозимых грузов</h4>
-                <p>Система учитывает материалы, формирует документы, контролирует автотранспорт, подключает оборудование и генерирует отчёты.</p>
-                <a href="3about.html">
-                    <button>Посмотреть</button>
-                </a>
-            </div>
-            <div class="block2">
-                <h4>Дополнительные функции и интеграция</h4> 
-                <p>Система интегрируется с корпоративной почтой и популярными системами, такими как SAP и 1C, что упрощает взаимодействие.</p>
-                <button>Посмотреть</button> 
-            </div>
+
+    <div class="container-4">
+        <h1>Наши работы</h1>
+        <div class="blocks2">
+        <div class="block2">
+            <div class="rab">
+            <img src="img/1robota.png" alt="">
+            <h2>Система контроля работы автотранспорта и учета перевозимых грузов</h2>
         </div>
-    </div>
-    <img src="img/Polygon 3.png" alt="" class="polygon-img"> 
-    <div id="container-5" class="container-5">
-        <div class="tx">
-            <div class="line"></div>
-            <h3>Контакты</h3>
-        </div>
-        <div class="full-width-block">
-            <div class="contact-info">
-                <div class="kontakty">
-                    <div class="kont">
-                        <img src="img/telefon.png" alt="">
-                        <h1>Позвоните нам</h1>
-                    </div>
-                    <p>+7 (35161) 9-52-51, +7 (7635) 4-12-09</p>
-                </div>
-                <div class="kontakty">
-                    <div class="kont">
-                        <img src="img/placeholder.png" alt="">
-                        <h1>Расположение</h1>
-                    </div>
-                    <p>Челябинская обл., г.Сатка, ул.Солнечная, 32</p>
-                </div>
-                <div class="kontakty">
-                    <div class="kont">
-                        <img src="img/clock.png" alt="">
-                        <h1>Рабочие часы</h1>
-                    </div>
-                    <p>пн-чт 08:00–17:00, перерыв 12:00–13:00; пт 08:00–16:00, перерыв 12:00–13:00</p>
+        <h4>Система позволяет:</h4>
+            <p>Вести учет перевозимых материалов (насыпных и в таре) с использованием автомобильных и ж/д весов Формировать различные первичные документы (путевые листы, ТТН и т.п.) Осуществлять контроль за работой и перемещениями автотранспорта с помощью средств спутниковой навигации Подключать различное оборудование (весы, сканеры штрих-кодов, транспондеры и т.п) Обмениваться данными с различными системами (SAP, 1C и т.д.) Формировать отчеты по перевозкам в различных ракурсах.</p>
+                <div class="but1">
+                    <button>Подробнее</button>
                 </div>
             </div>
+        <div class="block2">
+            <div class="rab">
+            <img src="img/2rabota.png" alt="">
+            <h3>Система электронного документооборота предприятия</h3>
         </div>
-    </div>
-    <footer>
-        <div class="footermenu">
-            <div class="logopark2">
-                <img src="img/logo.png" alt="">
-                <h1>Парк ИТ-Сатка</h1>
+        <h4>Система позволяет:</h4>
+            <p>Однократная регистрация документа с уникальным идентификатором Единая база документов Система поиска документов Согласование документов Прозрачность прохождения, контроль за исполнением документов Доступ из любой точки, где есть интернет Интеграция с корпоративной электронной почтой и различными системами (SAP, 1C и т.д.)</p>
+                <div class="but">
+                <button>Подробнее</button>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#container-2">О нас</a></li>
-                    <li><a href="#container-3">Предлагаем</a></li>
-                    <li><a href="#contact-info">Контакты</a></li>
-                    <li><a href="4about.html">Приложение</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="help">
-            <h2>Нужна помощь?</h2>
-            <button id="open-modal">Напишите нам</button>
-        </div>
-    </footer>
-    <div id="contact-modal" class="modal" style="display:none;">
-        <div class="modal-content">
-            <div class="top-block">
-                <span class="close">&times;</span> <!-- Кнопка закрытия -->
-                <h1>Связаться с нами</h1>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Ваше Имя" required="">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="E-mail" required="">   
-                    </div>
-                    <div class="form-group1">
-                        <textarea id="text" name="text" placeholder="" required="" rows="4"></textarea>
-                    </div>
-                    <button type="button" id="submit-button">Отправить</button>
-                </form>
+            </div>
+            </div>
+    </div>
+    <div class="container-5">
+        <h1>Связаться с нами</h1>
+        <form class="decor">
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+            <h3>Написать нам</h3>
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Сообщение..." rows="3"></textarea>
+            <input type="submit" value="Отправить">
+            </div>
+            </form>
+    </div>
+    <div class="container-6">
+        <div class="logopark1">
+            <img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt="">
+            <div class="logotext">
+                <h1 style="font-family: 'Holtwood One SC', cursive;">Парк It</h1>
+                <h2 style="font-family: 'Alegreya', cursive;">Сатка</h2>
             </div>
         </div>
+        <div class="adress">
+            <div class="adr">
+        <h1>Челябинская обл., г.Сатка,
+            ул.Солнечная, 32</h1>
+        <h2>+7 (35161) 9-52-51</h2>
+        <h3>park@itsatka.ru
+            it-satka@yandex.ru</h3>
+
+            <div class="ssyylky">
+                <img src="img/yandex.png" alt="">
+                <img src="img/bk.png" alt="">
+            </div>
+        </div>
+            <div class="karta">
+            <div style="width: 400px; height: 400px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.4397718422747!2d58.972322000000005!3d55.03551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43dad8e5766d64f3%3A0x740869dcfb084561!2z0J_QsNGA0Log0JjQoi3QodCw0YLQutCw!5e0!3m2!1sru!2sru!4v1744177311161!5m2!1sru!2sru" 
+                    width="600px" 
+                    height="400px" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+       
+    
+    
     </div>
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
